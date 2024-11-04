@@ -1,0 +1,745 @@
+/* Reset dasar untuk margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.single-items {
+    display: flex;
+    flex-wrap: wrap;
+    /* Membungkus elemen jika kontainer tidak cukup lebar */
+    gap: 20px;
+    /* Menambahkan jarak antar elemen */
+    justify-content: center;
+    /* Mengatur elemen agar berada di tengah */
+}
+
+/* Menyusun container secara fleksibel */
+.containerr {
+
+    display: flex;
+
+
+    flex-direction: row;
+
+    justify-content: space-between;
+    /* justify-content: center; */
+    /* align-items: center; */
+    min-height: 500px;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 4%;
+    padding-top: 4%;
+    /* background-color: #b927a3; */
+}
+
+@media (max-width: 375px) {
+    .containerr {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+        min-height: 300px;
+
+        /* background-color: #ffc7f7; */
+    }
+
+    .containerr h1 {
+        font-size: small;
+    }
+
+    .containerr p {
+        font-size: smaller;
+    }
+
+    .informasi {
+        height: 100%;
+        width: auto;
+        /* Mengisi seluruh tinggi container */
+        /* background-color: #007DFF; */
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-between;
+        padding: 10px;
+
+        align-items: center;
+        /* border: 2px solid #73ff01; */
+
+    }
+}
+
+.imghi {
+    width: 50%;
+    padding: 5%;
+
+    max-width: 400px;
+
+}
+
+/* Pengaturan margin untuk teks di layar besar */
+/* .container>div:first-child {
+    margin-right: 10%;
+} */
+
+.informasi {
+    height: 100%;
+    width: auto;
+    /* Mengisi seluruh tinggi container */
+    /* background-color: #007DFF; */
+    display: flex;
+
+    justify-content: space-between;
+    padding: 10px;
+
+    align-items: center;
+    /* border: 2px solid #73ff01; */
+
+}
+
+.informasiabu {
+    height: 100%;
+    width: auto;
+    /* Mengisi seluruh tinggi container */
+    /* background-color: #007DFF; */
+    display: flex;
+
+    justify-content: space-between;
+    padding: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    align-items: center;
+    /* border: 2px solid #73ff01; */
+
+}
+
+/* knten2 */
+
+@media (max-width: 375px) {
+    .contensbuabu {
+        background-color: rgb(255, 29, 29);
+
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: fit-content;
+
+    }
+
+    .informasiabu {
+        padding: 1px;
+        width: auto;
+        height: fit-content;
+
+        background-color: #838383;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+        margin-right: 0%;
+
+        border: 2px solid #73ff01;
+
+    }
+
+    .infocard h1 {
+        font-size: smaller;
+    }
+
+    .infocard p {
+        font-size: smaller;
+    }
+
+    .infocard {
+
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+
+        border: 2px solid #ff00cc;
+        text-align: center;
+
+    }
+
+
+
+}
+
+
+/* Gambar dalam container */
+.img-container {
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+    max-height: 400px;
+
+
+    /* Perbesar lebar maksimum */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    overflow: hidden;
+    padding: 50px;
+    /* Menambahkan jarak vertikal */
+    /* border-radius: 100px 10px 100px 10px; */
+    /* Atas-Kiri, Atas-Kanan, Bawah-Kanan, Bawah-Kiri */
+    /* background-color: #4572C9; */
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+
+
+
+
+.contensblue {
+    background-image: linear-gradient(to top, #50368c, #4572C9);
+    /* padding: 20px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .contensblue {
+        background-image: linear-gradient(to top, #50368c, #4572C9);
+
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.contensbuabu {
+    background-color: rgb(213, 213, 213);
+    padding: 20%;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+
+
+/* Tambahkan padding untuk bagian lain */
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body>div:nth-child(2),
+body>div:nth-child(3) {
+    padding: 20px;
+    text-align: center;
+
+}
+
+p {
+    color: #50368C;
+
+    text-align: justify;
+}
+
+h1 {
+    color: #50368C;
+}
+
+@media (max-width: 375px) {
+    h1 {
+        font-size: 1.5rem;
+        /* Ukuran lebih kecil pada ponsel */
+    }
+}
+
+
+h2 {
+    color: #50368C;
+    align-items: center;
+}
+
+.card-lebar {
+    max-width: 700px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 375px) {
+    .card-lebar {
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 10px;
+    }
+
+    .infocar {
+        width: 100%;
+        /* Kontainer mengikuti lebar elemen parent */
+        max-width: 150px;
+        word-wrap: break-word;
+        /* Pecah kata yang terlalu panjang */
+        overflow-wrap: break-word;
+        /* Dukungan tambahan */
+        text-align: justify;
+        /* Teks diatur merata */
+
+
+        border: 2px solid #ff00cc;
+        text-align: center;
+
+    }
+
+    .infocar h2 {
+        font-size: xx-small;
+    }
+
+    .infocar p {
+        font-size: xx-small;
+    }
+
+    .img-containercard {
+
+
+        /* overflow: hidden; */
+
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+
+
+        /* padding-right: 20px; */
+
+    }
+
+
+
+    .img-containercard img {
+
+        width: 100%;
+        height: 100%;
+        min-width: 120px;
+
+        object-fit: cover;
+        border-radius: 10px;
+
+    }
+
+    .button-blue {
+        font-size: xx-small;
+        background-color: #007bff;
+        /* Blue background */
+        color: white;
+        /* White text color */
+        padding: 2% 100%;
+        /* Padding for the button */
+        border: none;
+        /* Remove default border */
+        border-radius: 5px;
+        /* Rounded corners */
+        cursor: pointer;
+        /* Pointer cursor on hover */
+        font-size: 16px;
+        /* Font size */
+        text-align: center;
+        /* Center the text */
+        text-decoration: none;
+        /* Remove underline */
+        display: inline-block;
+        /* Inline-block to fit text */
+        transition: background-color 0.3s ease;
+        /* Smooth transition on hover */
+    }
+}
+
+.img-containercard {
+    flex: 1;
+
+
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 450px;
+
+    /* Maksimal 40% lebar kontainer untuk gambar */
+    margin-right: 20px;
+    /* Beri jarak antara gambar dan teks */
+}
+
+
+
+.img-containercard img {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+.infocard {
+    width: 100%;
+    max-width: 350px;
+    min-width: 100px;
+    height: auto;
+    margin: 50px;
+    /* border: 2px solid #ff00cc; */
+    text-align: center;
+    display: flexbox;
+
+}
+
+/* Teks dan Informasi di Kanan */
+.infocar {
+    width: 100%;
+    max-width: 300px;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+.infocar h2 {
+    color: #50368C;
+    margin-bottom: 10px;
+}
+
+.infocar p {
+    margin-bottom: 20px;
+    color: #50368C;
+}
+
+/* Tombol */
+.button-blue {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.button-blue:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+/* why */
+.konten {
+    max-width: auto;
+    position: relative;
+
+    margin: 7%;
+    /* border: 2px solid #ff0095; */
+
+    padding-bottom: 200px;
+}
+
+.isikonten {
+    max-width: auto;
+    display: flex;
+    padding-bottom: 5%;
+    justify-content: space-between;
+    /* border: 2px solid #1d5b77; */
+}
+
+
+.cardwhy {
+    width: auto;
+
+    height: auto;
+    border: 2px solid #50368C;
+    padding: 25px;
+    margin: 50px;
+    padding-top: 60px;
+    max-width: 300px;
+
+    border-radius: 20px;
+
+}
+
+.slider {
+    width: 100%;
+    max-width: 700px;
+    margin: 10px;
+}
+
+.cardwhy p {
+    font-size: small;
+}
+
+
+
+.imgwhy {
+    position: relative;
+    top: 100px;
+    right: 0;
+    width: 120px;
+
+
+}
+
+.multiple-items img {
+    width: 300px;
+    height: auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.infobiru {
+    height: auto;
+    background-color: #4572C9;
+    display: flex;
+    justify-content: space-between;
+
+    align-content: center;
+    padding: 10%;
+}
+
+.infobirudetail {
+
+    width: 50%;
+    height: auto;
+    background-color: #4572C9;
+}
+
+.infobiru img {
+    width: 40%;
+    height: auto;
+    background-color: #4572C9;
+}
+
+.container-slide {
+    width: 100%;
+    max-width: 850px;
+
+    align-self: center;
+    height: 250px;
+    margin-left: 20px;
+    /* background-color: #b1b1b1; */
+    /* border: 2px solid #99ff00; */
+    border-radius: 10px;
+}
+
+.card-rating {
+    /* width: 35%; */
+    /* height: 100%; */
+    margin: 20px;
+    width: 10px;
+    display: flex;
+    flex-direction: column;
+
+
+    padding: 20px;
+
+    height: 200px;
+
+    background-color: #dadae4;
+    border-radius: 20px;
+}
+
+.terbang {
+    position: absolute;
+    top: -200px;
+
+    left: -230px;
+    width: 350px;
+
+    border-radius: 10px;
+}
+
+@media (max-width: 375px) {
+
+    .terbang {
+        position: absolute;
+        top: -50px;
+
+        left: -50px;
+        width: 100px;
+
+    }
+
+
+}
+
+.toaterbang {
+    position: absolute;
+    top: -130px;
+    left: 1050px;
+    width: 150px;
+
+    border-radius: 10px;
+}
+
+.jet {
+    position: absolute;
+    top: 950px;
+    left: 1050px;
+    width: 180px;
+
+    border-radius: 10px;
+}
+
+@media (max-width: 375px) {
+    .konten {
+        max-width: auto;
+        position: relative;
+
+        margin: 0%;
+        border: 2px solid #ff0095;
+
+        padding-bottom: 200px;
+    }
+
+    .konten h1 {
+        font-size: small;
+    }
+
+    .cardwhy h3 {
+        font-size: x-small;
+    }
+
+    .cardwhy p {
+        font-size: xx-small;
+    }
+
+
+    .isikonten {
+        max-width: auto;
+        display: flex;
+
+        justify-content: space-between;
+        border: 2px solid #1d5b77;
+    }
+
+
+    .cardwhy {
+        width: auto;
+        height: auto;
+        border: 2px solid #50368C;
+        padding: 5px;
+        margin: 5px;
+        padding-top: 40px;
+        max-width: 200px;
+
+        border-radius: 20px;
+
+    }
+    .imgwhy {
+        position: relative;
+        top: 20px;
+        right: 0;
+        width: 60px;
+    
+    
+    }
+
+
+}
+
+
+/* gambar */
+
+.image-galeri {
+    margin: 20px;
+    max-width: 300px;
+    /* Atur lebar container */
+    max-height: 200px;
+    /* Atur tinggi container */
+    overflow: hidden;
+    /* Sembunyikan bagian gambar yang keluar dari container */
+    border: 2px solid #000;
+    /* Tambahkan border */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    /* Warna latar belakang */
+}
+
+.image-galeri img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    /* Mengatur gambar agar proporsional */
+}
+
+.button-blue {
+    background-color: #007bff;
+    /* Blue background */
+    color: white;
+    /* White text color */
+    padding: 2% 10%;
+    /* Padding for the button */
+    border: none;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    font-size: 16px;
+    /* Font size */
+    text-align: center;
+    /* Center the text */
+    text-decoration: none;
+    /* Remove underline */
+    display: inline-block;
+    /* Inline-block to fit text */
+    transition: background-color 0.3s ease;
+    /* Smooth transition on hover */
+}
+
+.button-blue:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.button-white {
+    background-color: #ffffff;
+    /* Blue background */
+    color: #007bff;
+    /* White text color */
+    padding: 2% 10%;
+    /* Padding for the button */
+    border: none;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    font-size: 16px;
+    /* Font size */
+    text-align: center;
+    /* Center the text */
+    text-decoration: none;
+    /* Remove underline */
+    display: inline-block;
+    /* Inline-block to fit text */
+    transition: background-color 0.3s ease;
+    /* Smooth transition on hover */
+}
+
+.button-white:hover {
+    background-color: #a3a3a3;
+    /* Darker blue on hover */
+}
